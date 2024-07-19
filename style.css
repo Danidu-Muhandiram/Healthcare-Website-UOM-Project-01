@@ -37,3 +37,27 @@
     font-weight: bold;
     font-size: 18px;
 }
+
+.main .homeText {
+    position:relative;
+    top: 80px;
+    left: 40px;
+    right: 50px;
+    width: 800px;
+    
+}
+
+.main .homeText h1{
+    font-size: 50px;
+    padding: 0px;
+}
+
+.main .homeText p{
+    
+}
+
+.main .mainImage img{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
