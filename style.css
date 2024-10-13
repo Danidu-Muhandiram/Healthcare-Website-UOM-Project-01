@@ -38,21 +38,53 @@
     font-size: 18px;
 }
 
+.main .logo h1{
+    font-size: 30px;
+    color:rgb(38, 38, 187);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.main .logo h1 span{
+    font-size: 24px;
+    background-color: rgb(38, 38, 187);
+    color: white;
+    padding: 3px;
+    opacity: 0.8;
+}
+
 .main .homeText {
     position:relative;
     top: 80px;
-    left: 40px;
-    right: 50px;
-    width: 800px;
+    left: 90px;
+    width: 850px;
     
 }
 
 .main .homeText h1{
-    font-size: 50px;
+    font-size: 75px;
     padding: 0px;
+    font-family: sans-serif;
+    color: rgb(0, 126, 245);
+    padding-bottom: 12px;
 }
 
+.main .homeText h1 span{
+    color: rgb(38, 38, 187);
+}
+.main .homeText .secondTitle {
+    font-size: 55px;
+}
+
+
+
 .main .homeText p{
+    text-align: justify;
+    width: 650px;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
     
 }
 
