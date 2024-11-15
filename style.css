@@ -73,11 +73,10 @@
 .main .homeText h1 span{
     color: rgb(38, 38, 187);
 }
+
 .main .homeText .secondTitle {
     font-size: 55px;
 }
-
-
 
 .main .homeText p{
     text-align: justify;
@@ -93,3 +92,189 @@
     bottom: 0px;
     right: 20px;
 }
+
+.buttons{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 60px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.about-us-container{
+    text-align: center;
+}
+
+.about-us-container h1{
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+.about-us-container p{
+    margin: 0px 40px 30px 40px;
+    font-size: 20px;
+}
+
+.icons{
+    width: 250px;
+}
+
+.aboutUs-images{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.services{
+    text-align: center;
+    margin-top: 80px;
+    background-color: lightblue;
+    padding: 50px 0px;  
+}
+
+.services h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.services ul{
+    list-style-type: disc;
+    list-style-position: inside; /* Keeps bullets aligned with text */
+    padding-left: 0;
+    display: inline-block; /* Aligns the list items as a block in the center */
+    text-align: left;
+}
+
+.services li{
+    line-height: 30px;
+    padding-left: -50px;  
+}
+
+.services li a{
+    text-decoration: none;
+}
+
+.services img{
+    width: 350px;
+    margin-left: 80px;
+    margin-top: -70px;
+    margin-right: 30px;
+    display: block;
+    float: right;
+
+}
+
+.tablebranch{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+   
+}
+.tablebranch tr {
+    border: 1px solid blue;
+    padding: 10px;
+}
+.tablebranch th {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.tablebranch td {
+    background-color: rgba(173, 216, 230, 0.199);
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.Branches{
+    text-align: center;
+}
+
+.Branches h1{
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+.contactus{
+    background-image: url('contactus.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 60vh; 
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.contactbackground h1{
+    font-size: 30px;
+    margin-top: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+}
+
+.contactbackground h3{
+    font-size: 22px;
+    margin-top: 160px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+    border: 2px solid white;
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+@media (max-width: 1536px) {
+    /*.main {
+      max-width: 1280px;
+      
+    }*/
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .main .nav {
+        flex-direction: column;
+    }
+
+    .main .nav .navBar li a {
+        color: red !important;  /* Add !important to force the color change */
+    }
+}
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+
