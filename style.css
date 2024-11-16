@@ -369,53 +369,6 @@
 
  /* Mobile view */
 @media screen and (max-width: 480px) {
-    .main .homeText h1 {
-        font-size: 35px;
-    }
-
-    .main .homeText p {
-        font-size: 16px;
-    }
-
-    .main .mainImage img {
-        width: 80%;
-        position: relative;
-        bottom: 0;
-        right: 0;
-    }
-
-    .main nav .navBar li {
-        margin-right: 10px;
-    }
-
-    .buttons {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .about-us-container h1, .services h1, .Branches h1 {
-        font-size: 24px;
-    }
-
-    .about-us-container p, .services li {
-        font-size: 16px;
-    }
-
-    .services img {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .contactus {
-        height: 100px;
-    }
-
-    .contactbackground h1 {
-        font-size: 2rem;
-    }
-
-    .contactbackground h3 {
-        font-size: 2rem;
-    }
+   
 }
 
