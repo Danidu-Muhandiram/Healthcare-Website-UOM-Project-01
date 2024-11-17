@@ -23,7 +23,14 @@
     background-color: transparent;
     padding: 15px 50px 15px 15px;
     justify-content: space-between;
+    position: fixed;
 
+}
+
+.main nav.scrolled {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .main nav .navBar li{
@@ -64,7 +71,7 @@
 
 .main .homeText {
     position:relative;
-    top: 80px;
+    top: 120px;
     left: 90px;
     max-width: 850px;
     word-wrap: break-word;
