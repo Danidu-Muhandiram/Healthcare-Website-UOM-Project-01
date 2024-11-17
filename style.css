@@ -67,6 +67,7 @@
     top: 80px;
     left: 90px;
     max-width: 850px;
+    word-wrap: break-word;
     
 }
 
@@ -332,6 +333,7 @@
     .aboutparagraph{
         margin: 10px;
         font-size: 1.8rem;
+        justify-content: center;
         
     }
 
@@ -398,6 +400,11 @@
         width: 100%;
     }
 
+    .main .homeText .secondTitle {
+        font-size: 3.0rem;
+        display: block;
+    }
+
     .main .homeText p {
         font-size: 1.6rem;
         display: block;
@@ -410,6 +417,10 @@
         bottom: 0;
         right: 0;
         padding-top: 80px;
+    }
+
+    .main nav .navBar{
+        justify-content: center;
     }
 
     .main nav .navBar li {
@@ -472,7 +483,88 @@
     }
 
     .contactbackground h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 
+
+ /* Mobile view */
+ @media screen and (max-width: 692px) {
+
+    .main nav .navBar{
+        justify-content: center;
+    }
+
+    .main nav .navBar li {
+        margin-right: 10px;
+    }
+
+    .main .homeText .secondTitle {
+        font-size: 3.0rem;
+        display: block;
+    }
+
+    .main .homeText p {
+        font-size: 1.6rem;
+        display: block;
+        width: 100%;
+    }
+
+    .main .mainImage img {
+        padding-top: 80px;
+    }
+ }
+
+
+ /*Animation*/
+
+ @keyframes heroanimation {
+    from {color: rgb(0, 126, 245);}
+    to {color: rgb(38, 38, 187);}  
+ }
+
+ @keyframes heroanimationspan {
+    from {color:   rgb(0, 126, 245);}}
+    to {color:  rgb(0, 126, 245);
+ }
+
+ .homeText h1 {
+    animation-name:heroanimation;
+    animation-duration: 5s;
+  }
+
+ .homeText h1 span{
+    animation-name:heroanimationspan;
+    animation-duration: 10s;
+  }
+
+  @keyframes textanimation{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+.homeText{
+    animation: textanimation 2s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes imageanimation{
+    from{
+        opacity: 0;
+        transform: perspective(500px);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px);
+    }
+}
+
+.mainImage img{
+    animation: imageanimation 5s ease-out 1 both;
+}
