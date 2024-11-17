@@ -272,6 +272,7 @@
 
     .main .homeText{
         left: 50px;
+        top: 145px;
     }
     
     .main .homeText h1 {
@@ -281,7 +282,7 @@
     .main .homeText p {
         font-size: 1.4rem;
         max-width: 85%;
-        padding: 0 20px 60px 0;
+        padding: 0 20px 70px 0;
         word-wrap: break-word;
         text-align: justify;
     }
@@ -322,6 +323,13 @@
         flex-wrap: wrap;
     }
 
+    .main nav.scrolled {
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        top: 0;
+    }
+    
     .main .logo h1 {
         font-size: 24px;
     }
@@ -522,6 +530,46 @@
     }
  }
 
+ @media screen and (max-width: 650px) {
+    .main .homeText{
+        top: 220px;
+    }
+
+    .main .mainImage img {
+        padding-top: 220px;
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+    .main .homeText{
+        top: 250px;
+    }
+
+    .main .mainImage img {
+        padding-top: 240px;
+    }
+
+    .main nav .navBar li {
+        margin-right: 10px;
+        line-height: 10px;
+    }
+
+    .main .homeText h1{
+        width: 80%;
+    }
+
+    .main .homeText .secondTitle {
+        font-size: 1.8rem;
+        display: block;
+        width: 80%;
+    }
+
+    .main .homeText p {
+        font-size: 1.2rem;
+        display: block;
+        width: 80%;
+    }
+ }
 
  /*Animation*/
 
