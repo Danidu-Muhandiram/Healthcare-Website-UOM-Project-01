@@ -51,21 +51,23 @@
 .logo{
     overflow: hidden;
     scrollbar-width: none;
+    max-height: 100px;
+    display: flex;
 }
 
 .main .logo h1{
     font-size: 1.5rem;
     color:rgb(38, 38, 187);
     font-family: "Archivo Black", sans-serif;
-    font-weight: 600;
+    font-weight: 600px;
     font-style: normal;
+    white-space: nowrap;
 }
 
 .main .logo h1 span{
     font-size: 1.8rem;
     background-color: rgb(38, 38, 187);
     color: white;
-    padding: 3px;
     opacity: 0.8;
 }
 
@@ -120,6 +122,13 @@
     margin-top: 60px;
     font-size: 1.2rem;
     margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
 }
 
 .about-us-container{
